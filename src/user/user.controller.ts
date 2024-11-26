@@ -22,8 +22,7 @@ export class UserController {
   }
 
   @Get()
-  findAll(@Req() request: Request) {
-    console.log('rewiest', request);
+  findAll() {
     return this.userService.findAll();
   }
 
